@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Up The Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main">
+    <h1>Set Up The Game</h1>
+    
+    <div>
+        <p>Enter Buy-In Amount (only once):</p>
+        <p><input type="number" id="buy-in-amount" placeholder="200">
+        <button id="set-buy-in">Set Buy-In</button></p>
+    </div>
+
+    <h4 id="buy-in-amount-display">Buy-In Amount Per Player:</h4>
+
+    <div>
+        <p>Add Players:
+        <input type="text" id="player-name" placeholder="Name">
+        <button id="add-player">Add Player</button></p>
+    </div>
+
+    <div id="players-list">
+        <div class="player-header">
+            <span>Name</span>
+            <span>Buy-In Amount</span>
+            <span></span>
+        </div>
+        <div id="players-data"></div>
+    </div>
+
+    <div id="total-buyin-display">Total Buy-In Amount: 0</div>
+
+    <button id="start-game">START GAME</button>
+    <br>
+    <br>
+    <button id="clear-local-data">Clear Local Data</button>
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
